@@ -3,13 +3,13 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 public class Mouse {
-	private static final int BODY_LENGTH = 50;
-	private static final int BODY_HEIGHT = 20;
-	private static final int TAIL_LENGTH = 40;
+	private static final int BODY_LENGTH = 75;
+	private static final int BODY_HEIGHT = 30;
+	private static final int TAIL_LENGTH = 60;
 	public void draw(Graphics g, int mouseX, int mouseY)
 	{
 		Graphics2D g2 = (Graphics2D) g;
-		g2.setColor(Color.gray);
+		g2.setColor(Color.red);
 		g2.fillOval(mouseX, mouseY, BODY_LENGTH, BODY_HEIGHT);
 		int x = mouseX + BODY_LENGTH;
 		int y = mouseY + BODY_HEIGHT/2;
